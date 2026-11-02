@@ -1,0 +1,11 @@
+# Data files
+*.csv
+*.parquet
+data/raw/
+data/processed/
+
+# Python Environment
+.env
+venv/
+__pycache__/
+*.pyc
