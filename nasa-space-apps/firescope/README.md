@@ -12,7 +12,7 @@ Algeria. The architecture is designed to support other regions.
 - NASA FIRMS MODIS C6.1 archive: 2000–2026
 - NASA FIRMS VIIRS Suomi-NPP C2 archive: 2012–2026
 
-*Raw data is hosted on Google Drive due to GitHub size limits: [PASTE YOUR GOOGLE DRIVE LINK HERE]*
+*Raw data is hosted on Google Drive due to GitHub size limits: [[GOOGLE DRIVE LINK HERE](https://drive.google.com/drive/folders/1b-GLTMERV_ompiarY2AFH6w8vZs3Rwsq?usp=sharing)]*
 
 ## Tech Stack
 - Frontend: React + TypeScript + Leaflet
