@@ -42,17 +42,18 @@ type MapViewProps = {
   month: number;
 };
 
+// Red activity scale: light red to deep crimson
 function getCellColor(value: number, max: number) {
-  if (max === 0 || value <= 0) return "#c7dff0";
+  if (max === 0 || value <= 0) return "#ffc9c9";
 
   const ratio = value / max;
 
-  if (ratio < 0.2) return "#c7dff0";
-  if (ratio < 0.4) return "#91c4e3";
-  if (ratio < 0.6) return "#579dca";
-  if (ratio < 0.8) return "#2673aa";
+  if (ratio < 0.2) return "#ffc9c9";
+  if (ratio < 0.4) return "#ff9999";
+  if (ratio < 0.6) return "#f45b5b";
+  if (ratio < 0.8) return "#dc2626";
 
-  return "#12466f";
+  return "#8b0000";
 }
 
 export default function MapView({
@@ -123,7 +124,7 @@ export default function MapView({
         <span className="map-legend-item">
           <span
             className="map-legend-dot"
-            style={{ backgroundColor: "#c7dff0" }}
+            style={{ backgroundColor: "#ffc9c9" }}
           />
           Lower activity
         </span>
@@ -131,7 +132,7 @@ export default function MapView({
         <span className="map-legend-item">
           <span
             className="map-legend-dot"
-            style={{ backgroundColor: "#579dca" }}
+            style={{ backgroundColor: "#f45b5b" }}
           />
           Moderate activity
         </span>
@@ -139,7 +140,7 @@ export default function MapView({
         <span className="map-legend-item">
           <span
             className="map-legend-dot"
-            style={{ backgroundColor: "#12466f" }}
+            style={{ backgroundColor: "#8b0000" }}
           />
           Higher activity
         </span>
